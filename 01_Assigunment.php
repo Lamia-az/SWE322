@@ -27,27 +27,23 @@ echo $n6 = $n3.$n4;
     echo "<br>";
     
 $Majors = array("Software engineering ", "N&S ","LAW");
-    echo "I love ".$Majors[0]." the most";
+    echo $Majors[0];
     echo "<br>";
     
-    echo count($Majors);
+    $CountArray = count ($Majors);
+    echo $CountArray;
     echo "<br>";
     
-    foreach($Majors as $Array){
-        echo $Array;}
-    echo "<br>";
-    
-      for ($i=0; $i<4; $i++){
-            if ($Majors == "Software engineering"){
-                echo "THis is my Major";
+    for ($i=0; $i< $CountArray; $i++){
+            if ($Majors[$i] == "Software engineering "){
+                echo "My Major is ".$Majors[$i];
                 echo "<br>";
         }
           else{
-              echo "Not my Major";
+              echo "We have ".$Majors[$i]." major in YU";
               echo "<br>";
           }
       }
-    
 ?>
 
 </body>
